@@ -1,0 +1,164 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <script src="../Scripts/Btn.js"></script>
+    <!--<script src="Scripts/Device.js"></script>-->
+
+    <link rel="stylesheet" href="../Styles/page.css" /> <!--media="screen and (max-width: 360px)"-->
+    <link rel="stylesheet" href="../Styles/response.css" />
+    <link rel="stylesheet" href="../Styles/desktop.css" />
+
+    <title>Watchers - Coringa</title>
+</head>
+
+<body onload="D_button()">
+    <header>
+        <nav>
+            <ul id="Btn" class="Menu Menu_bar close">
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
+            </ul>
+        </nav>
+
+        <img id="BtnMenu" class="btnMenu open" src="../Images/Btn_menu.png" onclick="Condition_menu()"/>
+        <img id="logo" class="Logo" src="../Images/Logo black.png" />
+        <img class="search_icon" src="../Images/Search.png" onclick="Condition_search()"/>
+
+        <input id="search_input" class="search close"/>
+    </header>
+
+    <div id="conteudo">
+        <h1>Coringa || A vida é uma comédia</h1>
+        <h2>Então sorria</h2>
+
+        <div id="d_Aside" class="Aside desktop">
+            <table id="Aside_table">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <figure>
+                                <img id="Aside_Image" src="../Images/Coringa.jpg" />
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Classificação</th>
+                        <td>
+                            <img id="idade" src="../Images/Faixa Etária/16.png" />
+                            16 anos
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Genero</th>
+                        <td class="Aside_category">
+                            <ul class="Aside_category">
+                                <li>Ação</li>
+                                <li>Crime</li>
+                                <li>Drama</li>
+                                <li>Suspense</li>
+                                <li>Suspense psicológico</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Duração</th>
+                        <td>2h 2min</td>
+                    </tr>
+
+                    <tr>
+                        <th>Idioma</th>
+                        <td>Inglês</td>
+                    </tr>
+
+                    <tr>
+                        <th>Autores</th>
+                        <td class="Aside_autors">
+                            <ul class="Aside_autors">
+                                <li>Todd Phillips</li>
+                                <li>&</li>
+                                <li>Scott Silver</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Distribuição</th>
+                        <td>Warner Bros. Pictures</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            
+        </p>
+
+        <div id="m_Aside" class="Aside mobile">
+                <table id="Aside_table">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <figure>
+                                    <img id="Aside_Image" src="../Images/Dark/Aside_Dark.png" />
+                                    <figcaption id="Aside_fotografo">Fotógrafo: Samantha Hurley</figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Classificação</th>
+                            <td>
+                                <img id="idade" src="../Images/Faixa Etária/16.png"/>
+                                16 anos
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Genero</th>
+                            <td>Ficção científica</td>
+                        </tr>
+
+                        <tr>
+                            <th>Temporadas</th>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th>Idioma</th>
+                            <td>Alemão</td>
+                        </tr>
+
+                        <tr>
+                            <th>Autores</th>
+                            <td class="Aside_autors">
+                                <ul class="Aside_autors">
+                                    <li>Baran bo Odar</li>
+                                    <li>&</li>
+                                    <li>Jantje Friese</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Estúdio</th>
+                            <td>Netflix</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+        </div>
+        <div class="video">
+            <!--Tamanho original: width="560", height="315"-->
+            <iframe src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" ; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

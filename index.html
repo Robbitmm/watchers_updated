@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <script src="Scripts/Btn.js"></script>
+
+        <link rel="stylesheet" href="Styles/page.css" /> <!--media="screen and (max-width: 360px)"-->
+        <link rel="stylesheet" href="Styles/response.css" />
+        <link rel="stylesheet" href="Styles/desktop.css" />
+        <link rel="stylesheet" href="Styles/index.css" />
+
+        <title>Watchers - Home</title>
+    </head>
+
+    <body onload="D_button()">
+        <header>
+            <nav>
+                <ul id="Btn" class="Menu Menu_bar close">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="Series/Dark.html">Séries</a></li>
+                </ul>
+            </nav>
+    
+            <img id="BtnMenu" class="btnMenu open" src="Images/Btn_menu.png" onclick="Condition_menu()"/>
+            <img id="logo" class="Logo" src="Images/Logo black.png" />
+            <img class="search_icon" src="Images/Search.png" onclick="Condition_search()"/>
+    
+            <input id="search_input" class="search close"/>
+        </header>
+
+        <!--<div class="destaque">
+            <img class="destaque" src="Images/Dark/Aside_Dark.png">
+
+            <input class="destaque" type="radio" name="top5" value="primeiro">
+            <input class="destaque" type="radio" name="top5" value="segundo">
+            <input class="destaque" type="radio" name="top5" value="terceiro">
+            <input class="destaque" type="radio" name="top5" value="quarto">
+            <input class="destaque" type="radio" name="top5" value="quinto">
+        </div>-->
+
+        <h1>Filmes</h1>
+        <div class="filmes">
+            <nav class="titulo Coringa">
+                <a href="Filmes/Coringa.html">
+                    <img class="Capa Coringa" src="Images/Coringa.jpg" />
+                    <ul class="info">
+                        <li class="topic-Title"><strong>Coringa</strong></li>
+                        <li class="topic"></li>
+                    </ul>
+                </a>
+            </nav>
+        </div>
+
+        <h1>Séries</h1>
+        <div class="series">
+            <nav class="titulo Dark">
+                <a href="Series/Dark.html">
+                    <img class="Capa Dark" src="Images/Dark/Aside_Dark.png" />
+                    <ul class="info">
+                        <li class="topic-Title"><strong>Dark</strong></li>
+                        <li class="topic"></li>
+                    </ul>
+                </a>
+            </nav>
+        </div><!--Fim filmes-->
+
+    </body>
+</html>

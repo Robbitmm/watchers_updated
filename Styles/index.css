@@ -1,0 +1,117 @@
+/*.destaque{
+    position: relative;
+    width: 900px;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.destaque img{
+    position: relative;
+    width: 900px;
+    height: 330px;
+}
+
+.destaque input{
+    position: relative;
+    display: inline;
+}*/
+
+.filmes, .series {
+    width: 1200px;
+
+    margin-left: 122.5px;
+    margin-right: 122.5px;
+}
+
+.capa {
+    width: 184px;
+    height: 274px;
+
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    width: 184px;
+    height: 274px;
+
+    margin: 0;
+    margin-bottom: 35px;
+
+    border: 0;
+
+    padding-right: 35px;  
+}
+
+
+/*EFECT*/
+
+.info {
+    position: absolute;
+    
+    right: 35px;
+    bottom: -15px; /*Não pode ser usando top*/
+
+    width: 145px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: inline-block;
+    transition: transform .25s linear;
+    opacity: 0;
+    background-color: #000000;
+    height: 30%;
+    transform: scaleY(0);
+}
+
+.titulo:hover .info {
+    opacity: 0.8;
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.topic-Title{
+    text-align: center;
+    font-size: 20px;
+    white-space: normal; /*Quebra de Linha*/
+    
+
+    color: #ffffff;
+    list-style: none;
+
+    padding-bottom: 20px;
+    padding: 0;
+
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.topic-Subtitle {
+    text-align: center;
+    font-size: 20px;
+    white-space: normal;
+
+    color: #ffffff;
+    list-style: none;
+    padding-top: 20px;
+    padding: 10px;
+    margin-left: -30px;
+}
+
+.topic {
+    color: #ffffff;
+    position: relative;
+    list-style: none;
+    
+    text-align: center;
+    padding: 10px;
+    margin-left: -30px;
+}

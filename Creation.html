@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+
+        <script src="Scripts/Creation.js"></script>
+
+        <link rel="stylesheet" href="Styles/Creation.css" />
+
+        <title>Creation Side</title>
+    </head>
+
+<body>
+    
+    <div id="content">
+        <div id="image_input"  class="file_input">
+            <input id="Image_select" type="file" accept="image/*">
+            <button id="Send_image" onclick="Get_image()">Escolher imagem</button>
+
+            <script>
+                function Get_image(){
+                    document.getElementById("Image_select").click(); 
+                };
+            </script>
+        </div>
+
+        <div class="titles_input">
+            <input id="title_input" type="text" placeholder="Título">
+            <br>
+            <input id="sub-title_input" type="text" placeholder="Subtítulo">
+            <br>
+        </div>
+
+        <div class="writing_input">
+            <textarea name="text_input" id="text_input" cols="30" rows="10"></textarea>
+            <br>
+        </div>
+    </div>
+
+    <div id="category">
+        <label>Categorias:</label><br>
+
+        <form class="category_input">
+            <input type="radio" id="Filme" name="gategory" value="Filme">Filmes
+            <input type="radio" id="Serie" name="gategory" value="Serie">Série
+        </form>
+    </div>
+
+    <div class="submit">
+        <input type="submit">
+        <button onclick="Create_page()">Vizualizar</button>
+    </div>
+</body>
+</html>
